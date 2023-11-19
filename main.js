@@ -24,7 +24,7 @@ console.log(result);
 */
 
 //esercizio 2
-
+/*
 const array = ["pomodori", "uova", "farina", "latte"];
 
 const logElements=(array)=>{
@@ -33,4 +33,22 @@ const logElements=(array)=>{
     });
 };
 logElements(array);
+*/
 
+//esercizio 3
+
+const divide = (dividendo, divisore)=>{
+    try{
+        if(divisore === 0){
+        throw new Error('impossibile dividere per 0');
+        } 
+        return dividendo/divisore;
+
+    }catch(error){
+        console.error(error);
+        return null;
+        
+    }    
+}
+const test = divide(10,0);
+console.log(test)
